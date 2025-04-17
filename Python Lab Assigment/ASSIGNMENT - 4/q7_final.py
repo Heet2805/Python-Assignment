@@ -2,31 +2,30 @@ class Stack:
     def __init__(self):
         self.stack = []
 
-    # Push operation
+    
     def push(self, item):
         self.stack.append(item)
         print(f"{item} pushed to stack")
 
-    # Pop operation
-    def pop(self):
+        def pop(self):
         if len(self.stack) == 0:
             print("Stack is empty. Cannot perform pop operation.")
         else:
             popped_item = self.stack.pop()
             print(f"{popped_item} popped from stack")
 
-    # Peek operation
+    
     def peek(self):
         if len(self.stack) == 0:
             print("Stack is empty. Cannot perform peek operation.")
         else:
             print(f"Top element is {self.stack[-1]}")
 
-    # Check if stack is empty
+    
     def is_empty(self):
         return len(self.stack) == 0
 
-    # Display the stack
+    
     def display(self):
         if len(self.stack) == 0:
             print("Stack is empty.")
